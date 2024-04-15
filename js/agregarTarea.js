@@ -23,7 +23,7 @@ function AgregarTarea(){
     let tarea = new Tarea(nombre,fecha,hora,descripcion);
     tareas.push(tarea);
     guardarTareasEnLocal(tareas);
-    window.location.href('../index.html')
+    window.location.reload
 }
 function cargarTareasDesdeLocal() {
     const tareasGuardadas = JSON.parse(localStorage.getItem("tareas"));
