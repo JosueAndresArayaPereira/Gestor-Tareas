@@ -1,0 +1,47 @@
+
+
+.contenedorTareas{
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+}
+#completadaTarea{
+    color: rgb(26, 152, 30);
+}
+#pendienteTarea{
+    color: rgb(181, 87, 14);
+}
+@media (max-width: 1240px){
+    .contenedorTareas{
+        grid-template-columns: repeat(3,2fr);
+    }
+}
+
+@media (max-width: 768px) {
+ .contenedorTareas {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media(max-width: 500px){
+    .contenedorTareas{
+        grid-template-columns: repeat(1,2fr);
+    }
+}
+
+.tarea{
+    border-radius: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: rgb(80, 80, 80);
+    background: #aaa;
+    box-shadow: 5px 10px 10px #24242487;
+}
+.tarea button{
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+}
